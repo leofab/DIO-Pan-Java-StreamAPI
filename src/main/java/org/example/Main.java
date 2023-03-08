@@ -65,5 +65,16 @@ public class Main {
         set1.addAll(agenda.entrySet());
         //imprimindo usando forEach
         set1.forEach(entry -> System.out.println(entry.getKey() + " - " + entry.getValue().getNome()));
+
+
+        // Operações StreamAPI 2
+
+        List<String> numerosAleatorios = Arrays.asList("1", "0", "4", "1", "2", "3", "9", "9", "6", "5");
+        System.out.println("Imprima todops os elementos dessa lsita de String: \n");
+        /*
+        numerosAleatorios.stream().forEach(System.out::println);
+        numerosAleatorios.forEach(System.out::println);
+         */
+
     }
 }
