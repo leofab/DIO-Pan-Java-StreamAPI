@@ -1,6 +1,7 @@
 package org.example;
 
 import java.util.*;
+import java.util.stream.Collectors;
 
 public class Main {
     public static void main(String[] args) {
@@ -76,5 +77,10 @@ public class Main {
         numerosAleatorios.forEach(System.out::println);
          */
 
+        System.out.println("Pegue os 5 primeiros numeros e coloque dentro de um Set>");
+        numerosAleatorios.stream()
+                .limit(5)
+                .collect(Collectors.toSet())
+                .forEach(System.out::println);
     }
 }
